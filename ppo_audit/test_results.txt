@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.13, pytest-9.1.1, pluggy-1.6.0 -- /opt/agenttracekit/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /var/lib/agenttracekit/desk/workspaces/pair-3f9d327368/a/ppo_audit
+configfile: pytest.ini
+collecting ... collected 16 items
+
+test_ppo_core.py::test_masks_hand_computed PASSED                        [  6%]
+test_ppo_core.py::test_gae_reference_hand_computed PASSED                [ 12%]
+test_ppo_core.py::test_torch_matches_reference PASSED                    [ 18%]
+test_ppo_core.py::test_lambda_zero_is_td_residual PASSED                 [ 25%]
+test_ppo_core.py::test_lambda_one_is_monte_carlo_with_bootstrap PASSED   [ 31%]
+test_ppo_core.py::test_lambda_one_bias_when_values_wrong PASSED          [ 37%]
+test_ppo_core.py::test_padding_excluded_from_normalization PASSED        [ 43%]
+test_ppo_core.py::test_single_valid_step PASSED                          [ 50%]
+test_ppo_core.py::test_all_empty_is_well_defined PASSED                  [ 56%]
+test_ppo_core.py::test_reset_obs_misuse_is_demonstrably_wrong PASSED     [ 62%]
+test_ppo_core.py::test_loss_components_hand_computed PASSED              [ 68%]
+test_ppo_core.py::test_padding_excluded_from_loss PASSED                 [ 75%]
+test_ppo_core.py::test_gradient_finite_difference PASSED                 [ 81%]
+test_ppo_core.py::test_clip_branch_changes_gradient PASSED               [ 87%]
+test_ppo_core.py::test_real_update_decreases_loss_and_fixes_old_targets PASSED [ 93%]
+test_ppo_core.py::test_real_update_multiepoch_targets_remain_fixed PASSED [100%]
+
+============================= 16 passed in 46.92s ==============================
